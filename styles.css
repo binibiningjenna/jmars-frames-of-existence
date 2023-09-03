@@ -1,0 +1,230 @@
+
+    * {
+      box-sizing: border-box;
+    }
+    body::after {
+      display: block;
+      height: 8%;
+    }
+  body{
+    background-image: linear-gradient(99deg, #000000, #e4ad40);
+    width: 100%;
+    margin:0;
+    min-height:80vh;
+  }
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+  }
+  #logo {
+    width: max(100px, 18vw);
+    background-color: #0c0c24;
+    aspect-ratio: 20 / 4;
+    width:120px;
+    height:50px;
+    padding:0;
+    
+  }
+  h1{
+    text-align:center;
+    font-weight:bold;
+    font-size:140%;
+    color:white;
+  }
+  .dropbtn {
+    color:rgb(255, 251, 251);
+    padding: 0;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+    font-family:garamond;
+    font-weight:bold;
+    background-color:black;
+
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size:25px;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+    text-align:center;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(252, 252, 252);
+    padding: 0;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ffffff;
+    color:rgb(5, 5, 5);
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color:#e4ad40;
+}
+.image{
+    margin:0;
+    padding:0 40px 0 60px;
+    float:left;
+}
+img {
+    max-width:260px;
+    height:260px;
+}
+
+.hello {
+    font-family: sans-serif;
+    font-size:180%;
+    font-weight:bold;
+    margin:0;
+    color:#ffffff;
+    text-align:left;
+    
+}
+.jm{
+    font-family: sans-serif;
+    font-size: 320%;
+    font-weight:bold;
+    padding: 0;
+    margin:0;
+    color:#ffffff;
+}
+
+.rightcontent{
+    float:center; 
+    margin:100px 50px 0px 5px;
+}
+.rightcontent, .caption {
+    font-size:140%;
+    font-weight:bold;
+    font-family:monospace;
+}
+button{
+    font-size:80%;
+    background-color: #f4bd21;
+    text-decoration: none;
+    padding:5px 20px 5px;
+    margin:0 10px 0;
+}
+.btn {
+    text-align:center;
+    padding:4px;
+    word-spacing:50px;
+    margin: 0 ;
+    
+.btn, a {
+  color:black;
+  font-family:sans-serif;
+  font-weight:bold;
+}
+}
+a {
+    text-decoration:none;
+}
+.socmed {
+  position:static;
+  display:flex;
+  text-align:right;
+  margin:0;
+}
+.ig {
+  width:61px;
+  height:46px;
+}
+.fb {
+  width:43px;
+  height:41px;
+  margin: 2px 0 0 0;
+}
+.yt {
+  width:43px;
+  height:41px;
+  margin: 2px 0 0 0;
+}
+footer{
+    background-color:#f4bd21;
+    width: 100%;
+    height: 8%;
+    margin:-30 0 -100px 0;
+    padding:0;
+    position: absolute;
+    bottom: 0;
+
+}
+footer, p{
+    font-size:140%;
+    text-align:center;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    padding:0 0 0 0;
+    margin-top:5px;
+}
+@media only screen and (max-width: 800px) {
+  .caption{
+    text-align:center;
+    padding-left:46px;
+  }
+  .btn {
+    padding-left:50px;
+  }
+  .jm {
+    padding:0;
+    margin:0;
+    text-align:center;
+  }
+  .hello {
+    padding:0;
+    margin:0;
+    text-align:center;
+  }
+  .image {
+    padding:0;
+    padding-left:30px;
+    margin:0;
+    text-align:center;
+  }
+  .socmed {
+    position:static;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+  }
+  .foot{
+    font-size:100%;
+  }
+  footer{
+    width: 100%;
+    height: 8%;
+    padding:0;
+    position:static;
+    bottom: 0;
+    margin-top:30px;
+    margin-bottom:-30px;
+}
+}
